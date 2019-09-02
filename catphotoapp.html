@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+      .red-text { 
+        color: red; 
+      }
+
+      p {
+        font-size: 16px;
+        font-family: monospace;
+      }
+
+      h2 {
+        font-family: Lobster;
+      }
+
+      .smaller-image {
+        width: 100px;
+      }
+
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+
+      .silver-background {
+        background-color: silver;
+      }
+
+      #cat-photo-form { 
+        background-color: aqua;
+      }
+
+      [type='checkbox'] {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    </style>
+    <h2 class="red-text">CatPhotoApp</h2>
+  </head>
+  
+  <body>
+    <main>
+      <p class="red-text">Click here to view more <a href="#">cat photos</a></p><br>
+
+      <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cute cat" class="thick-green-border smaller-image"></a>
+
+      <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching 
+        attack your ankles chase the red dot, hairball run catnip eat the grass 
+        sniff. Purr jump eat the grass rip the couch scratched sunbathe, 
+        shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. 
+        Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching 
+        attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+      <p>Purr jump eat the grass rip the couch scratched sunbathe, 
+        shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. 
+        Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching 
+        attack your ankles chase the red dot, hairball run catnip eat the grass sniff. 
+        Purr jump eat the grass rip the couch scratched sunbathe, 
+        shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+      <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, 
+        scratch at owner, destroy all furniture, especially couch or lay on arms 
+        while you're using the keyboard. Missing until dinner time toy mouse 
+        squeak roll over. With tail in the air lounge in doorway. 
+        Man running from cops stops to pet cats, goes to jail.</p>
+        
+      <div class="silver-background">
+        <p>Things cats love:</p>
+        <ul>
+          <li>stratch</li>
+          <li>purr</li>
+          <li>play</li>
+        </ul>
+
+        <p>Top 3 things cats hate:</p>
+        <ol>
+          <li>loud noises</li>
+          <li>other cats</li>
+          <li>bath time</li>
+        </ol>
+      </div>
+
+      <form id="cat-photo-form" action="/submit-cat-photo">
+        <label for="indoor">
+          <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+        </label>
+        <label for="outdoor">
+          <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label><br>
+        <label for="loving">
+          <input id="loving" type="checkbox" name="personality" checked>Loving
+        </label>
+        <label for="lazy">
+          <input id="lazy" type="checkbox" name="personality">Lazy
+        </label>
+        <label for="energetic">
+          <input id="energetic" type="checkbox" name="personality">Energetic
+        </label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+
+    </main>
+  </body>
+
+  <footer id="footer">
+    Copyright Cat Photo App
+  </footer>
+</html>
