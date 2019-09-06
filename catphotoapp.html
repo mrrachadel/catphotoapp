@@ -83,6 +83,12 @@
         animation-iteration-count: 4;
       }
 
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+
       @keyframes color-cats {
         0% {
           border-color: blue;
@@ -95,6 +101,12 @@
         }
         100% {
           border-color: green;
+        }
+      }
+
+      @media (max-height: 350px) {
+        p {
+          font-size: 15px;
         }
       }
 
@@ -112,26 +124,27 @@
       <div class="cat-img">
         <a href="#"><img id="cutecats" src="https://bit.ly/fcc-relaxing-cat" alt="cute cat" class="thick-green-border smaller-image"></a>
       </div>
-      <p><strong>Kitty ipsum dolor sit amet</strong>, shed everywhere shed everywhere stretching 
-        attack your ankles chase the red dot, hairball run catnip eat the grass 
-        sniff. <em>Purr jump eat the grass rip the couch scratched sunbathe, 
-        shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. 
-        Kitty ipsum dolor sit amet</em>, shed everywhere shed everywhere stretching 
-        attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+      <article>
+        <p><strong>Kitty ipsum dolor sit amet</strong>, shed everywhere shed everywhere stretching 
+          attack your ankles chase the red dot, hairball run catnip eat the grass 
+          sniff. <em>Purr jump eat the grass rip the couch scratched sunbathe, 
+          shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. 
+          Kitty ipsum dolor sit amet</em>, shed everywhere shed everywhere stretching 
+          attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
 
-      <p>Purr jump eat the grass rip the couch scratched sunbathe, 
-        shed everywhere <u>rip the couch sleep in the sink fluffy fur catnip scratched</u>. 
-        <em>Kitty ipsum dolor sit amet, shed everywhere</em> shed everywhere stretching 
-        attack your ankles chase the <strong>red dot, hairball run catnip eat the grass sniff. 
-        Purr jump eat the grass rip the couch scratched sunbathe, 
-        shed everywhere rip the sleep</strong> in the sink fluffy fur catnip scratched.</p>
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, 
+          shed everywhere <u>rip the couch sleep in the sink fluffy fur catnip scratched</u>. 
+          <em>Kitty ipsum dolor sit amet, shed everywhere</em> shed everywhere stretching 
+          attack your ankles chase the <strong>red dot, hairball run catnip eat the grass sniff. 
+          Purr jump eat the grass rip the couch scratched sunbathe, 
+          shed everywhere rip the sleep</strong> in the sink fluffy fur catnip scratched.</p>
 
-      <p><u>Meowwww loved it, hated it, loved it, hated it yet spill litter box, 
-        scratch at owner</u>, destroy all furniture, especially couch or lay on arms 
-        while you're using the keyboard. Missing until dinner time toy mouse 
-        squeak roll over. <s>With tail in the air lounge in doorway. 
-        Man running from cops stops to pet cats, goes to jail.</s></p>
-        
+        <p><u>Meowwww loved it, hated it, loved it, hated it yet spill litter box, 
+          scratch at owner</u>, destroy all furniture, especially couch or lay on arms 
+          while you're using the keyboard. Missing until dinner time toy mouse 
+          squeak roll over. <s>With tail in the air lounge in doorway. 
+          Man running from cops stops to pet cats, goes to jail.</s></p>
+      </article>  
       <div class="silver-background">
         <p>Things cats love:</p>
         <ul>
