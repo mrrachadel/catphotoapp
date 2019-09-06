@@ -76,6 +76,27 @@
         margin-top: 10px;
         margin-bottom: 15px;
       }
+      
+      #cutecats {
+        animation-name: color-cats;
+        animation-duration: 8s;
+      }
+
+      @keyframes color-cats {
+        0% {
+          border-color: blue;
+        }
+        25% {
+          border-color: aqua;
+        }
+        50% {
+          border-color: yellowgreen;
+        }
+        100% {
+          border-color: green;
+        }
+      }
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <div class="titles">
@@ -88,7 +109,7 @@
   <body>
     <main>
       <div class="cat-img">
-        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cute cat" class="thick-green-border smaller-image"></a>
+        <a href="#"><img id="cutecats" src="https://bit.ly/fcc-relaxing-cat" alt="cute cat" class="thick-green-border smaller-image"></a>
       </div>
       <p><strong>Kitty ipsum dolor sit amet</strong>, shed everywhere shed everywhere stretching 
         attack your ankles chase the red dot, hairball run catnip eat the grass 
